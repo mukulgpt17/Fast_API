@@ -5,8 +5,6 @@ from typing import Optional
 from random import randrange 
 import psycopg2 
 
-
-
 app= FastAPI()
 
 class Post(BaseModel):
