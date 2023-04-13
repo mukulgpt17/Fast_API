@@ -17,6 +17,7 @@ class Post(BaseModel):
     # note : below we have imported Optional library 
     rating: Optional[int]=None
 
+my_post={}
 
 def find_post(id):
     for pt in my_posts:
