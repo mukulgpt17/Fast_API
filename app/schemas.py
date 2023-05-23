@@ -17,8 +17,6 @@ class PostBase(BaseModel):
 class PostCreate(PostBase):
     pass
 
-
-
 #this class is created for modelling the response we send after created a post req 
 class Post(PostBase):
     id:int
@@ -27,6 +25,8 @@ class Post(PostBase):
     #pydyantic model only works on dict type and hence this part of the code helps to convert ORM model type to dict
     class Config :
         orm_mode=True
+
+
 
 class UserCreate(BaseModel):
     email:EmailStr
