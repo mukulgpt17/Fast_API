@@ -10,7 +10,7 @@ class Post(Base) :
     title=Column(String,nullable=False)
     content=Column(String,nullable=False)
     published=Column(Boolean,server_default='TRUE',nullable=True)
-    
+    created_at=Column(TIMESTAMP(timezone=True),nullable=False,server_default=text('Now()'))
 
 class User(Base):
     __tablename__="users"
