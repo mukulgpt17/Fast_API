@@ -33,8 +33,8 @@ def get_db():
 # #direct DB connection 
 # while True:
 #     try : 
-#         conn=psycopg2.connect(host='localhost',database='fastapi',user ='postgres'
-#                             ,password='Muk@2317',cursor_factory=RealDictCursor )
+#         conn=psycopg2.connect(host='localhost',database='Database_Name',user ='user_name'
+#                             ,password='user_password',cursor_factory=RealDictCursor )
 #         cursor=conn.cursor()
 #         print("Database connection was succesfull")
 #         break
